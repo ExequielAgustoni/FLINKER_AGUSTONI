@@ -198,14 +198,8 @@ input:focus{
     font-size: 35px;
 }
 
-table{
-    font-size: 20px;
-    transition: all 2s;
-}
 
-table:hover{
-    font-size: 25px;
-}
+
 
 
 
