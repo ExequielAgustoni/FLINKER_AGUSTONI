@@ -50,7 +50,7 @@ h6{
     text-align: center;   
 }
 
-#cambioBarra{
+.cambioBarra{
     text-align: end;
     width: 35%;   
 }
@@ -174,13 +174,18 @@ header{
     }    
 }
 
-img{
+.card{       
+    align-items: center;
+    border: none;
+}
+
+img{    
     transition: all 2s;
 }
 
 img:hover{
-    height: 400px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
 }
 
 input{
@@ -189,13 +194,20 @@ input{
 }
 
 input:focus{
-    width: 70%;
+    width: 45%;
     height: 40px;
     font-size: 30px;
 }
 
 .cambioMenu:hover{
-    font-size: 35px;
+    font-size: 35px;   
+}
+
+.card-text{
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
 }
 
 
