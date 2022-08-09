@@ -83,29 +83,26 @@
            todo lo que nos apasiona.
         </p>
         <form class="cambioFormulario" action="" method="get" enctype="multipart/form-data">
-            <fieldset>               
-                <label for="Nombre y apellido">Nombre y apellido</label>
-                <br>
-                <input type="text" id="Nombre y apellido" name="Nombre y apellido">
-                <br>
-                <label for="Celular">Celular</label>
-                <br>
-                <input type="tel" id="Celular" name="Celular">
-                <br>
-                <label for="E-mail">E-mail</label>
-                <br>
-                <input type="email" id="E-mail" name="E-mail">
-                <br>
-                <label for="Acerca de ti:">Acerca de ti:</label>
-                <br>
-                <textarea name="Acerca de ti:" id="Acerca de ti:" cols="30" rows="10" 
+            <div class="mb-3">
+                <label for="Nombre y apellido" class="form-label">Nombre y apellido</label>
+                <input type="text" class="form-control" id="Nombre y apellido">
+              </div>
+              <div class="mb-3">
+                <label for="Celular" class="form-label">Celular</label>
+                <input type="text" class="form-control" id="Celular">
+              </div>
+              <div class="mb-3">
+                <label for="Email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="Email">
+              </div>
+              <div class="mb-3">
+                <label for="Acerca de ti" class="form-label">Acerca de ti:</label>
+                <textarea class="form-control" id="Acerca de ti" rows="3" 
                 placeholder="Escribe acerca de tus experiencias laborales y aptitudes"></textarea>
-                <br>
-                <input type="button" name="Adjuntar CV" value="Adjuntar CV">
-                <br>
-                <input type="submit" name="Enviar datos" value="Enviar datos">
-            </fieldset>
-        </form>
+              </div>
+              <input type="button" name="Adjuntar CV" value="Adjuntar CV">
+              <input type="submit" name="Enviar datos" value="Enviar datos">
+        </form>          
     </section>
     <footer class="cambioFooter cambioFooterGrid">
         <p>25171787-099478621 | flinker@ventas.com.uy | ™Copyright © © 2022</p>
