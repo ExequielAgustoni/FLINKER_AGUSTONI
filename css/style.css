@@ -133,70 +133,16 @@ header{
     grid-area: footer;
 }
 
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    #grilla{
+#grilla{
         display: grid;
-        grid-template-columns:auto;
-        grid-template-rows: 10% 10% auto 20%;
-        grid-template-areas: "header" "GridMenuHorizontal" "GridDestacados" "footer";
-    }
-    .cambioMenuDos{
-        display: none ;
-    }
-    #cambioTitulo{
-        color: rgb(238, 122, 14);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 60px;
-        font-style: normal;
-        font-weight: bold;    
-        text-decoration: none;
-        width: 90%;    
-    }
-    body{
-        height: 2000px;
-    }
-    .cambioFooter{
-        background-color: rgb(204, 204, 204);
-        text-align: justify ;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: larger;   
-        height: 190%;
-    }  
-}
-
-@media screen and (min-width: 1200px) {
-    #grilla{
-        display: grid;
-        grid-template-columns: 20% auto;
+        grid-template-columns: repeat(autofit, minmax (15rem, 1fr));
         grid-template-rows: 1fr 1fr auto 10%;
         grid-template-areas: "header header" "GridMenuHorizontal GridMenuHorizontal" "GridMenuIzquierda GridDestacados" "footer footer";
     }    
-}
 
 .card{       
     align-items: center;
     border: none;
-}
-
-img{    
-    transition: all 2s;
-}
-
-img:hover{
-    height: 200px;
-    width: 200px;
-}
-
-input{
-    width: 35%;
-    transition: all 2s;
-}
-
-input:focus{
-    width: 45%;
-    height: 40px;
-    font-size: 30px;
 }
 
 .cambioMenu:hover{
