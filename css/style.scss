@@ -1,11 +1,13 @@
+@import "variables";
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;              
 }
- 
+
 #cambioTitulo{
-    color: rgb(238, 122, 14);
+    color: $colorPrincipal;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 100px;
     font-style: normal;
@@ -14,7 +16,7 @@
 }
 
 .cambioMenu{
-    color: rgb(238, 122, 14);
+    color: $colorPrincipal;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
     text-align: center;
@@ -28,7 +30,7 @@
     transition: all 3s;
     &:hover{
         font-size: 35px;
-        color: rgb(238, 122, 14) ;   
+        color: $colorPrincipal;   
     }    
 }
 
@@ -45,7 +47,7 @@
 }
 
 #cambioTituloSecundario{
-    color: rgb(238, 122, 14);
+    @include color;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;     
 }
@@ -148,4 +150,21 @@ header{
         text-align: center;
         font-weight: bold;
     }
+}
+
+$mapa: (cambioMenu: rgb(238, 122, 14));
+
+@each $seccion, $color in $mapa {
+    .#{$seccion}{
+        color: rgb(238, 122, 14);
+    }
+}
+
+#cambioTituloSecundario{
+    color: map-get($mapa, cambioMenu);
+    @extend #cambioTituloSecundario
+}
+
+@mixin color($colorPrincipal) {
+    color: $colorPrincipal;
 }

@@ -148,4 +148,12 @@ header {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
   font-weight: bold;
+}
+
+.cambioMenu {
+  color: rgb(238, 122, 14);
+}
+
+#cambioTituloSecundario {
+  color: rgb(238, 122, 14);
 }/*# sourceMappingURL=style.css.map */
