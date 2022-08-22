@@ -168,3 +168,11 @@ $mapa: (cambioMenu: rgb(238, 122, 14));
 @mixin color($colorPrincipal) {
     color: $colorPrincipal;
 }
+
+@media screen and (min-width: 220px) and (max-width: 900px){
+
+    .cambioMenuDos{
+    display: none;
+    }
+  
+  }
