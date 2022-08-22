@@ -157,3 +157,12 @@ header {
 #cambioTituloSecundario {
   color: rgb(238, 122, 14);
 }/*# sourceMappingURL=style.css.map */
+
+
+@media screen and (min-width: 220px) and (max-width: 900px){
+
+  .cambioMenuDos{
+  display: none;
+  }
+
+}
